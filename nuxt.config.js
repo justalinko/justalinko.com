@@ -12,7 +12,8 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'author' , content: 'justalinko'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: 'https://ui-avatars.com/api/?name=JST&background=000&color=eee&length=3&size=9' }
@@ -43,5 +44,19 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  // environment variables
+  env: {
+    'telegrambot_apikey' : 'bot2018552197:AAGTc-CeyfTf4zSiIUDzv8v56Z6n89LpWzE',
+    'github_username' : 'justalinko',
+    'profile_email' : 'alinkokomansuby@gmail.com',
+    'profile_web' : 'https://justalinko.com'
+  },
+  // nuxt loading
+  loading: {
+    height: '4px',
+    color: 'red',
+    duration:5000
   }
 }

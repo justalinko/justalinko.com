@@ -98,7 +98,7 @@
               class="rounded rounded-full w-36 h-36 float-left mr-6"
               lt="avatars justalinko"
             />
-            <p class="text-lg">
+            <p class="text-lg" >
               Alin Koko Mansuby is a Web Developer based on Jepara, Central Java
               , Indonesia with a passion for building digital services/stuff he
               wants. He has a knack for all things launching products, from
@@ -133,16 +133,16 @@
           <div class="mt-10 ml-10">
             <div class="grid grid-cols-1 md:grid-cols-2 md:text-2xl gap-2">
               <div class="col-start">
-                <li>PHP Native</li>
-                <li>Laravel Framework</li>
-                <li>CodeIgniter Framework</li>
-                <li>Bash shell scripting</li>
+                <li class="hover:text-red-700 hover:font-bold" >PHP Native</li>
+                <li  class="hover:text-red-700 hover:font-bold">Laravel Framework</li>
+                <li  class="hover:text-red-700 hover:font-bold">CodeIgniter Framework</li>
+                <li  class="hover:text-red-700 hover:font-bold">Bash shell scripting</li>
               </div>
               <div class="col-end">
-                <li class="text-xl">NodeJS</li>
-                <li>VueJS</li>
-                <li>Git</li>
-                <li>Linux SysAdmin</li>
+                <li  class="hover:text-red-700 hover:font-bold">NodeJS</li>
+                <li  class="hover:text-red-700 hover:font-bold">VueJS</li>
+                <li  class="hover:text-red-700 hover:font-bold">Git</li>
+                <li  class="hover:text-red-700 hover:font-bold">Linux SysAdmin</li>
               </div>
             </div>
           </div>
@@ -354,7 +354,7 @@
             </div>
           </div>
         </div>
-                <div id="posts">
+                <div id="post">
                 <h3 class="font-bold text-2xl ml-10 mt-10 m-1 underline">Posts</h3>
                 <div class="mt-10 mb-20">
                     <div class="grid grid-cols-1" v-for="(post, index) in posts" :key="index">
