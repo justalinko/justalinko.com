@@ -1,12 +1,9 @@
 <template>
-  <Profile />
+  <Profile :posts="postsData" />
 </template>
 
 <script>
 export default {
-  props:{
-    posts: ''
-  },
   data() {
     return {
       postsData: {},
@@ -33,8 +30,7 @@ export default {
       fetch("https://justalinko.com/ancok.php")
         .then((res) => res.json())
         .then((data) => {
-          this.posts = data.feed.entry;
-          console.log(this.postsData);
+          this.postsData = data.feed.entry;
         });
     },
   },

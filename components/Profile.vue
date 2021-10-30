@@ -133,16 +133,16 @@
           <div class="mt-10 ml-10">
             <div class="grid grid-cols-1 md:grid-cols-2 md:text-2xl gap-2">
               <div class="col-start">
-                <li class="hover:text-red-700 cursor-pointer hover:font-bold">PHP Native</li>
-                <li class="hover:text-red-700 cursor-pointer hover:font-bold">Laravel Framework</li>
-                <li class="hover:text-red-700 cursor-pointer hover:font-bold">CodeIgniter Framework</li>
-                <li class="hover:text-red-700 cursor-pointer hover:font-bold">Bash shell scripting</li>
+                <li>PHP Native</li>
+                <li>Laravel Framework</li>
+                <li>CodeIgniter Framework</li>
+                <li>Bash shell scripting</li>
               </div>
               <div class="col-end">
-                <li class="hover:text-red-700 cursor-pointer hover:font-bold">NodeJS</li>
-                <li class="hover:text-red-700 cursor-pointer hover:font-bold">VueJS</li>
-                <li class="hover:text-red-700 cursor-pointer hover:font-bold">Git</li>
-                <li class="hover:text-red-700 cursor-pointer hover:font-bold">Linux SysAdmin</li>
+                <li class="text-xl">NodeJS</li>
+                <li>VueJS</li>
+                <li>Git</li>
+                <li>Linux SysAdmin</li>
               </div>
             </div>
           </div>
@@ -357,7 +357,7 @@
                 <div id="posts">
                 <h3 class="font-bold text-2xl ml-10 mt-10 m-1 underline">Posts</h3>
                 <div class="mt-10 mb-20">
-                    <div class="grid grid-cols-1 " v-bind="posts" v-for="post in posts" >
+                    <div class="grid grid-cols-1" v-for="(post, index) in posts" :key="index">
 
                         <div class=" w-full lg:max-w-full lg:flex gap-3 mt-2">
                             <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l border-t border-l border-b border-gray-400 text-center overflow-hidden"
@@ -378,7 +378,7 @@
                                         alt="Avatar of Writer">
                                     <div class="text-sm">
                                         <p class="text-gray-900 leading-none"> {{ post.author[0].name.$t }}</p>
-                                        <p class="text-gray-600">{{ parseDate( post.published.$t ) }}</p>
+                                        <p class="text-gray-600">{{ new Date(post.published.$t).toDateString() }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -395,3 +395,15 @@
     </div>
   </div>
 </template>
+
+<script>
+export default{
+  props: [
+    'posts'
+  ],
+  mounted(){
+    console.log("from profile")
+    console.log(this.posts)
+  }
+}
+</script>
