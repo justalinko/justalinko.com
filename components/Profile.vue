@@ -133,16 +133,16 @@
           <div class="mt-10 ml-10">
             <div class="grid grid-cols-1 md:grid-cols-2 md:text-2xl gap-2">
               <div class="col-start">
-                <li>PHP Native</li>
-                <li>Laravel Framework</li>
-                <li>CodeIgniter Framework</li>
-                <li>Bash shell scripting</li>
+                <li class="hover:text-red-700 cursor-pointer hover:font-bold">PHP Native</li>
+                <li class="hover:text-red-700 cursor-pointer hover:font-bold">Laravel Framework</li>
+                <li class="hover:text-red-700 cursor-pointer hover:font-bold">CodeIgniter Framework</li>
+                <li class="hover:text-red-700 cursor-pointer hover:font-bold">Bash shell scripting</li>
               </div>
               <div class="col-end">
-                <li class="text-xl">NodeJS</li>
-                <li>VueJS</li>
-                <li>Git</li>
-                <li>Linux SysAdmin</li>
+                <li class="hover:text-red-700 cursor-pointer hover:font-bold">NodeJS</li>
+                <li class="hover:text-red-700 cursor-pointer hover:font-bold">VueJS</li>
+                <li class="hover:text-red-700 cursor-pointer hover:font-bold">Git</li>
+                <li class="hover:text-red-700 cursor-pointer hover:font-bold">Linux SysAdmin</li>
               </div>
             </div>
           </div>
